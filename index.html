@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>vai's website!</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .travel-timeline {
+      border-left: 3px solid #888;
+      margin-left: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .travel-timeline::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 18px;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 10px,
+        #888 10px,
+        #888 12px
+      );
+    }
+
+    .travel-entry {
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+
+    .travel-entry::before {
+      content: "✈️";
+      position: absolute;
+      left: -2.3rem;
+      top: 0;
+    }
+
+    .travel-entry strong {
+      color: #222;
+    }
+
+    .hometown-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .hometown-gallery img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .hometown-gallery p {
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    .hometown-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>vai's website!</h1>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#textAnalyzer">Text Tool</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <img src="imgs/vai.png" alt="Profile Picture" class="profile-pic" />
+    <div>
+      <h2>Vaibhavi Kolipaka</h2>
+      <p>I'm a student in International Institute of Information Technology,Hyderabad doing B.Tech in Computer Science and Master of Science in Computing & Human Sciences</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about-myself" class="card">
+      <h2>About Myself</h2>
+    
+      <div class="about-section">
+        <h3>Small intro ⁉️</h3>
+        <p>Hii I'm Vaibhavi Kolipaka, Born on July 17, 2006. I was born in India, but grew up in Middle eastern countries all my life, , i.e, UAE and Saudi Arabia. I'm currently a student in IIITH and trying to get through the impending deadlines every day ;-; </p>
+      </div>
+    
+      <div class="about-section">
+        <h3>Side Quests</h3>
+        <div class="dropdown-grid">
+          <div class="dropdown-card">
+            <div class="dropdown-label">Music</div>
+            <div class="dropdown-content">
+              <img src="imgs/sing.PNG" alt="Music" />
+              <p>I'm trained in hindustani classical music, and sing bollywood/western etc on insta as well</p>
+            </div>
+          </div>
+      
+          <div class="dropdown-card">
+            <div class="dropdown-label">Dance</div>
+            <div class="dropdown-content">
+              <img src="imgs/dance.PNG" alt="Dance" />
+              <p>I've never been trained in dance but I do it for recreation and performed in a lot of fests</p>
+            </div>
+          </div>
+      
+          <div class="dropdown-card">
+            <div class="dropdown-label">Guitar & Bass</div>
+            <div class="dropdown-content">
+              <img src="imgs/bass.PNG" alt="Guitar" />
+              <p>I started off with acoustic guitar, and use it often as a background in my covers. I've recently been playing bass for my band</p>
+            </div>
+          </div>
+      
+          <div class="dropdown-card">
+            <div class="dropdown-label">Art</div>
+            <div class="dropdown-content">
+              <img src="imgs/art.PNG" alt="Art" />
+              <p>Pencil sketching and oil pastels from time to time.</p>
+            </div>
+          </div>
+      
+          <div class="dropdown-card">
+            <div class="dropdown-label">Henna</div>
+            <div class="dropdown-content">
+              <img src="imgs/henna.PNG" alt="Henna" />
+              <p>Been the family’s go-to henna artist for years.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-section">
+        <h3>Travel Diary ✈️</h3>
+        <div class="travel-timeline">
+          <div class="travel-entry">
+            <strong>2006:</strong>
+            <p>Born in Mahbubabad, Andhra Pradesh, India</p>
+          </div>
+          <div class="travel-entry">
+            <strong>2007–2012:</strong>
+            <p>Lived in Jubail, Saudi Arabia</p>
+          </div>
+          <div class="travel-entry">
+            <strong>2012–2023:</strong>
+            <p>Moved to UAE 🇦🇪</p>
+          </div>
+          <div class="travel-entry">
+            <strong>2013:</strong>
+            <p>Visited Germany & Switzerland 🇩🇪🇨🇭</p>
+          </div>
+          <div class="travel-entry">
+            <strong>2014:</strong>
+            <p>Traveled to Malaysia & Singapore 🌴</p>
+          </div>
+          <div class="travel-entry">
+            <strong>2017:</strong>
+            <p>Went to USA for a month 🇺🇸</p>
+          </div>
+          <div class="travel-entry">
+            <strong>2018:</strong>
+            <p>Bali Trip 🌊</p>
+          </div>
+          <div class="travel-entry">
+            <strong>May 2024:</strong>
+            <p>Qatar 🇶🇦</p>
+          </div>
+          <div class="travel-entry">
+            <strong>June 2024:</strong>
+            <p>Georgia 🇬🇪 </p>
+          </div>
+          <div class="travel-entry">
+            <strong>Future Wishlist:</strong>
+            <p>Japan, Greece, Maldives, Europe, Brazil 🌏</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="timeline">
+      <h2>Pics from my hometown, Hyderabad!</h2>
+      <div class="hometown-gallery">
+        <div class="hometown-card">
+          <img src="imgs/char.jpg" alt="Charminar">
+          <p>Charminar – Heart of the old city</p>
+        </div>
+        <div class="hometown-card">
+          <img src="imgs/lake.webp" alt="Hussain Sagar">
+          <p>Hussain Sagar – My fav place in Hyderabad</p>
+        </div>
+        <div class="hometown-card">
+          <img src="imgs/fort.jpg" alt="Golconda Fort">
+          <p>Golconda Fort – UG1 trip memories</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>🎓 Education & Achievements</h2>
+      <ul class="edu-achieve-list">
+        <li class="edu-item">High School: <span>Asian International Private School, Ruwais</span></li>
+        <li class="edu-item">College: <span>International Institute of Information Technology Hyderabad (IIITH)</span></li>
+        <li class="achieve-item">Achievements:
+          <ul class="achieve-sublist">
+            <li class="achieve-bullet">Gold and silver medals in Science and Math Olympiads</li>
+            <li class="achieve-bullet">Won Best Speaker in the School Debate Competition 2024</li>
+            <li class="achieve-bullet">Rank 1 in 11th Grade Entrance Examination</li>
+            <li class="achieve-bullet">School Topper for 12th Boards</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      
+      <h3>Intermediate</h3>
+      <div class="skills">
+        <span class="tag tag-int">HTML</span>
+        <span class="tag tag-int">CSS</span>
+        <span class="tag tag-int">C</span>
+      </div>
+    
+      <h3>Moderate</h3>
+      <div class="skills">
+        <span class="tag tag-mod">C++</span>
+      </div>
+    
+      <h3>Beginner</h3>
+      <div class="skills">
+        <span class="tag tag-beg">Python</span>
+      </div>
+    </section>
+    
+    <section id="cv" class="card">
+      <h2>My CV</h2>
+      <a href="imgs/resume.pdf" class="cv-button" download>Download CV (PDF)</a>
+    </section>
+
+    <section id="textAnalyzer" class="card">
+      <h2>🔍 Text Analyzer Tool</h2>
+      <textarea id="textInput" rows="12" placeholder="Paste your 10,000+ word text here..."></textarea>
+      <button onclick="analyzeText()">Analyze Text</button>
+      <pre id="output"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Vaibhavi Kolipaka, 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
